@@ -1,0 +1,30 @@
+﻿@using RabbitHole;
+@{
+	if(@Model.IsView) {
+		@:[DbQuery("@Model.Name")]
+	}else{
+		@:[DbSet("@Model.Name")]
+	}
+}
+		public class @Model.Name.ToPascalCase() {
+@{
+    foreach(var col in Model.Columns) {
+        if(@col.IsKey) {
+		@:[Key]
+		}
+	    else if(!@col.Nullable) {
+		@:[Required]
+		}
+		if(string.IsNullOrEmpty(@col.DataTypeText)) {
+		@:[Column("@col.Name")] 
+		}else{
+		@:[Column("@col.Name", TypeName = "@col.DataTypeText")] 
+		}
+		@:public @col.Name.ToPascalCase() {
+			@:get;
+			@:set;
+		@:}
+		@:
+	}
+}
+    }

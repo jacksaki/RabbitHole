@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitHole", "RabbitHole\RabbitHole.csproj", "{F1B6F310-36B9-465E-A3E8-2E3F45D2EBF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1B6F310-36B9-465E-A3E8-2E3F45D2EBF4}.Debug|x86.ActiveCfg = Debug|x86
+		{F1B6F310-36B9-465E-A3E8-2E3F45D2EBF4}.Debug|x86.Build.0 = Debug|x86
+		{F1B6F310-36B9-465E-A3E8-2E3F45D2EBF4}.Release|x86.ActiveCfg = Release|x86
+		{F1B6F310-36B9-465E-A3E8-2E3F45D2EBF4}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D50D904A-C27B-40AA-ABB6-155617079188}
+	EndGlobalSection
+EndGlobal
